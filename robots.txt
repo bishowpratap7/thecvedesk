@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bishowpratap7.github.io/thecvedesk/sitemap.xml

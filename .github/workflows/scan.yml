@@ -1,0 +1,46 @@
+name: The CVE Desk Scan
+
+# One-shot scan: manual dispatch, or a push to the pinger branch.
+on:
+  workflow_dispatch:
+  push:
+    branches: [pinger]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: thecvedesk-loop-oneshot
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 tools/scan.py
+        env:
+          PYTHONUNBUFFERED: "1"
+      - name: Commit and push updates
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/feed.json index.html feed.xml sitemap.xml
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          git commit -m "CVE Desk update $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push origin HEAD:main
+      - name: Ping IndexNow
+        if: steps.commit.outputs.changed == 'true'
+        run: |
+          if [ -f "2d1ebc8e37790a8789ce8f66fdf4a6d0.txt" ]; then
+            curl -s --max-time 20 "https://api.indexnow.org/indexnow?url=https%3A%2F%2Fbishowpratap7.github.io%2Fthecvedesk%2F&key=2d1ebc8e37790a8789ce8f66fdf4a6d0" >/dev/null || true
+          fi

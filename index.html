@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Latest CVE Vulnerabilities, Mapped — CVSS, EPSS, CISA KEV & the Weakness Graph | The CVE Desk</title>
+<meta name="description" content="The CVE Desk tracks the latest CVE vulnerabilities from the NVD, flags the ones CISA lists as known-exploited, scores them with EPSS exploit probability, and maps them as a live node graph — CVEs connected to their CWE weaknesses, affected products and ecosystems. Curated by application security engineer Bishow Pandey.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://bishowpratap7.github.io/thecvedesk/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The CVE Desk">
+<meta property="og:title" content="The CVE Desk — Latest Vulnerabilities, Mapped as a Graph">
+<meta property="og:description" content="Fresh CVEs with CVSS severity, EPSS exploit probability and CISA KEV status — drawn as a living map of weaknesses, products and ecosystems.">
+<meta property="og:url" content="https://bishowpratap7.github.io/thecvedesk/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@bishowppandey">
+<meta name="twitter:title" content="The CVE Desk — Latest CVE Vulnerabilities, Mapped">
+<meta name="twitter:description" content="The newest CVEs, the exploited ones, and the graph that connects them. Refreshed around the clock.">
+<link rel="alternate" type="application/rss+xml" title="The CVE Desk" href="feed.xml">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"The CVE Desk","url":"https://bishowpratap7.github.io/thecvedesk/","description":"Latest CVE vulnerabilities tracked and mapped: CVSS, EPSS, CISA KEV and a CVE-CWE-product graph.","author":{"@type":"Person","name":"Bishow Pandey","url":"https://x.com/bishowppandey","sameAs":["https://x.com/bishowppandey","https://www.linkedin.com/in/bishowpandey","https://github.com/bishowpratap7","https://bishowpratap7.github.io/bishow-pandey-tech-blogs/","https://bishowpratap7.github.io/thedevdesk/","https://bishowpratap7.github.io/scrollpatrol/","https://bishowpratap7.github.io/theworlddesk/","https://bishowpratap7.github.io/thestockdesk/","https://bishowpratap7.github.io/theshoppingdesk/","https://bishowpratap7.github.io/thecozydesk/","https://bishowpratap7.github.io/thefoodiedesk/","https://bishowpratap7.github.io/thestyledesk/","https://bishowpratap7.github.io/museumofoutages/","https://bishowpratap7.github.io/thecvedesk/"]}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a CVE?","acceptedAnswer":{"@type":"Answer","text":"CVE stands for Common Vulnerabilities and Exposures. Each CVE is a unique ID (like CVE-2024-3094) for a publicly disclosed security flaw, so defenders everywhere can talk about the same hole in the same words. The master records live in the National Vulnerability Database (NVD), run by NIST."}},{"@type":"Question","name":"What do CVSS and EPSS scores mean?","acceptedAnswer":{"@type":"Answer","text":"CVSS measures how severe a flaw is (0–10: how bad it would be if exploited). EPSS, from FIRST, estimates the probability (0–100%) that it actually will be exploited in the wild. A smart patch queue sorts by both: severe and likely beats severe and theoretical."}},{"@type":"Question","name":"What is the CISA KEV list?","acceptedAnswer":{"@type":"Answer","text":"CISA's Known Exploited Vulnerabilities catalog lists flaws that attackers are already using in real intrusions. If a CVE is in KEV, it is not a drill — US federal agencies are required to patch those first, and everyone else should too. The CVE Desk flags KEV entries in red."}},{"@type":"Question","name":"What does the vulnerability graph show?","acceptedAnswer":{"@type":"Answer","text":"Each dot is a thing: a CVE, the CWE weakness class behind it, a product it affects, or a software ecosystem it travels in. Lines connect them — so you can see at a glance which weakness keeps spawning CVEs, and which products sit at the center of the storm."}},{"@type":"Question","name":"Where does The CVE Desk get its data?","acceptedAnswer":{"@type":"Answer","text":"From the public sources of record: the NVD API (NIST), CISA's KEV catalog, FIRST's EPSS API, and the GitHub Advisory Database. The desk refreshes around the clock and links every CVE to its official record."}}]}
+</script>
+<!--ITEMLIST:START-->
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "ItemList", "name": "Latest CVE vulnerabilities tracked by The CVE Desk", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CVE-2026-119977 — WordPress Core is vulnerable to Remote Code Execution in versions 4.7 through 7.1.3. This ", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119977"}, {"@type": "ListItem", "position": 2, "name": "CVE-2026-118235 — The SimpleForm – Form Maker to Chat Apps with Quiz, Poll and Multi Lead Notifications plug", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118235"}, {"@type": "ListItem", "position": 3, "name": "CVE-2026-116512 — The Project Manager – AI Powered Project Management, Task Management, Kanban Board & Time ", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116512"}, {"@type": "ListItem", "position": 4, "name": "CVE-2026-109220 — The PDF Invoice for WooCommerce + Drag and Drop Template Builder plugin for WordPress is v", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109220"}, {"@type": "ListItem", "position": 5, "name": "CVE-2026-119096 — The Uncanny Toolkit for LearnDash plugin for WordPress is vulnerable to Authentication Byp", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119096"}, {"@type": "ListItem", "position": 6, "name": "CVE-2026-103882 — The Acadlix LMS – AI Quiz Maker, Online Exam & Course Plugin for WordPress plugin for Word", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103882"}, {"@type": "ListItem", "position": 7, "name": "CVE-2026-116557 — The WP Booking System - Booking Calendar plugin for WordPress is vulnerable to unauthorize", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116557"}, {"@type": "ListItem", "position": 8, "name": "CVE-2026-89270 — The Popup Builder – Create highly converting, mobile friendly marketing popups. plugin for", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89270"}, {"@type": "ListItem", "position": 9, "name": "CVE-2026-116086 — A flaw was found in konflux-ci. An attacker with permission to trigger automated workflow ", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116086"}, {"@type": "ListItem", "position": 10, "name": "CVE-2026-104012 — The Rox Appointment Booking – Appointment Booking Scheduling Solution plugin for WordPress", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104012"}, {"@type": "ListItem", "position": 11, "name": "CVE-2026-120070 — The User Frontend – Membership, User Registration, User Profile, User Directory & Content ", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120070"}, {"@type": "ListItem", "position": 12, "name": "CVE-2026-76010 — The Photo Gallery, Sliders, Proofing and Themes – NextGEN Gallery plugin for WordPress is ", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76010"}, {"@type": "ListItem", "position": 13, "name": "CVE-2026-114217 — A flaw was found in konflux-ci. Continuous Integration (CI) automation scripts store sensi", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114217"}, {"@type": "ListItem", "position": 14, "name": "CVE-2026-116964 — A flaw was found in konflux-ci. An attacker with repository write access can achieve arbit", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116964"}, {"@type": "ListItem", "position": 15, "name": "CVE-2026-103898 — The Wp Social Login and Register Social Counter plugin for WordPress is vulnerable to Auth", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103898"}, {"@type": "ListItem", "position": 16, "name": "CVE-2026-117681 — A flaw was found in konflux-ci. This vulnerability allows privilege escalation when the us", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117681"}, {"@type": "ListItem", "position": 17, "name": "CVE-2026-109197 — The WP Directory Kit plugin for WordPress is vulnerable to generic SQL Injection via the '", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109197"}, {"@type": "ListItem", "position": 18, "name": "CVE-2026-118185 — The Security Optimizer WordPress plugin before 1.6.9 does not limit the number of two-fact", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118185"}, {"@type": "ListItem", "position": 19, "name": "CVE-2026-118638 — The Mapster WP Maps WordPress plugin before 2.0.6 does not perform any authorization check", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118638"}, {"@type": "ListItem", "position": 20, "name": "CVE-2026-119163 — The FunnelKit Automations – Email Marketing Automation and CRM for WordPress & WooCommerce", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119163"}, {"@type": "ListItem", "position": 21, "name": "CVE-2026-120040 — The Mail logging & Catcher plugin for WordPress is vulnerable to Sensitive Information Exp", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120040"}, {"@type": "ListItem", "position": 22, "name": "CVE-2026-120194 — A flaw was found in json-glib. The JSONPath slice evaluator used by json_path_query() can ", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120194"}, {"@type": "ListItem", "position": 23, "name": "CVE-2026-109997 — The Ninja Forms – Contact Form Builder with Calculators, Quizzes, Signatures & AI Form Bui", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109997"}, {"@type": "ListItem", "position": 24, "name": "CVE-2026-109234 — The Meow Lightbox plugin for WordPress is vulnerable to Stored Cross-Site Scripting via th", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109234"}, {"@type": "ListItem", "position": 25, "name": "CVE-2026-116520 — The PPWP – Password Protect Pages plugin for WordPress is vulnerable to Stored Cross-Site ", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116520"}, {"@type": "ListItem", "position": 26, "name": "CVE-2026-111254 — The W3 Total Cache plugin for WordPress is vulnerable to Stored Cross-Site Scripting via t", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111254"}, {"@type": "ListItem", "position": 27, "name": "CVE-2026-107653 — The SureCart – Ecommerce Made Easy For Selling Physical Products, Digital Downloads, Subsc", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107653"}, {"@type": "ListItem", "position": 28, "name": "CVE-2026-107759 — The WPO365 | MICROSOFT 365 GRAPH MAILER plugin for WordPress is vulnerable to Stored Cross", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107759"}, {"@type": "ListItem", "position": 29, "name": "CVE-2026-107750 — The PDF Invoices & Packing Slips for WooCommerce plugin for WordPress is vulnerable to Sto", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107750"}, {"@type": "ListItem", "position": 30, "name": "CVE-2026-116522 — The Relevanssi – A Better Search plugin for WordPress is vulnerable to Stored Cross-Site S", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116522"}, {"@type": "ListItem", "position": 31, "name": "CVE-2026-115840 — The VikRentCar Car Rental Management System plugin for WordPress is vulnerable to Stored C", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115840"}, {"@type": "ListItem", "position": 32, "name": "CVE-2026-116548 — The VikRentCar Car Rental Management System plugin for WordPress is vulnerable to Stored C", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116548"}, {"@type": "ListItem", "position": 33, "name": "CVE-2026-118070 — The Welcart e-Commerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting v", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118070"}, {"@type": "ListItem", "position": 34, "name": "CVE-2026-119065 — The Shipping Zones by Drawing for WooCommerce plugin for WordPress is vulnerable to Stored", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119065"}, {"@type": "ListItem", "position": 35, "name": "CVE-2026-119162 — The User Submitted Posts – Enable Users to Submit Posts from the Front End plugin for Word", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119162"}, {"@type": "ListItem", "position": 36, "name": "CVE-2026-118057 — The Shield Security – Smart Bot Blocking, Brute-Force Login Protection & File Scanning plu", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118057"}, {"@type": "ListItem", "position": 37, "name": "CVE-2026-110530 — The FeedWordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting in ver", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110530"}, {"@type": "ListItem", "position": 38, "name": "CVE-2026-118043 — The Bulk Media Register WordPress plugin before 2.01 does not properly validate a user-sup", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118043"}, {"@type": "ListItem", "position": 39, "name": "CVE-2026-119089 — The ThirstyAffiliates – Affiliate Links, Link Branding, Link Tracking & Marketing Plugin p", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119089"}, {"@type": "ListItem", "position": 40, "name": "CVE-2026-120075 — The WP Activity Log plugin for WordPress is vulnerable to Stored Cross-Site Scripting in a", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120075"}]}
+</script>
+<!--ITEMLIST:END-->
+<style>
+:root{--bg:#070a12;--panel:#0e1420;--line:#1e2a3d;--txt:#e8eef7;--mut:#93a4bd;--acc:#4da3ff;--gold:#e8c766;--crit:#e5484d;--high:#f76b15;--med:#ffb224;--low:#46a758}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font-family:Arial,Helvetica,sans-serif}
+a{color:var(--acc)}
+.bar{position:sticky;top:0;z-index:20;background:#0a0f18f5;border-bottom:2px solid var(--acc);padding:.55rem 1rem;display:flex;gap:.8rem;align-items:center;flex-wrap:wrap}
+.bar .brand{font-size:1.25rem;font-weight:bold}
+.bar .by{color:var(--mut);font-size:.9rem}.bar .by a{color:var(--gold);text-decoration:none;font-weight:bold}
+.social{margin-left:auto;display:flex;gap:.5rem}
+.follow{background:#000;color:#fff;border:1px solid #555;border-radius:999px;padding:.35rem .9rem;text-decoration:none;font-size:.85rem;font-weight:bold}
+.follow:hover{background:#1d9bf0;border-color:#1d9bf0}
+.follow.li:hover{background:#0a66c2;border-color:#0a66c2}
+main{max-width:1100px;margin:0 auto;padding:1.2rem 1rem 3rem}
+h1{font-size:2rem;line-height:1.2;margin:.4rem 0;font-family:Georgia,serif}
+.lede{color:var(--mut);font-size:1.05rem;line-height:1.55}
+.stats{display:flex;gap:.8rem;flex-wrap:wrap;margin:1rem 0}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:.6rem 1rem;min-width:130px}
+.stat b{display:block;font-size:1.5rem;color:var(--acc)}
+.stat span{font-size:.72rem;color:var(--mut);text-transform:uppercase;letter-spacing:.6px}
+section.desk{margin-top:2rem}
+section.desk h2{font-size:1.45rem;font-family:Georgia,serif;border-bottom:2px solid var(--acc);padding-bottom:.3rem}
+#graphwrap{background:var(--panel);border:1px solid var(--line);border-radius:12px;position:relative;overflow:hidden}
+#graph{width:100%;height:540px;display:block;cursor:grab}
+.legend{display:flex;gap:1rem;flex-wrap:wrap;font-size:.8rem;color:var(--mut);padding:.55rem .8rem;border-top:1px solid var(--line)}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:.3rem;vertical-align:middle}
+#tip{position:absolute;pointer-events:none;background:#000d;border:1px solid var(--acc);border-radius:8px;padding:.45rem .6rem;font-size:.8rem;display:none;max-width:280px;z-index:5}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.85rem;margin-top:.8rem}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:.75rem .85rem;text-decoration:none;color:var(--txt);display:block}
+.card:hover{border-color:var(--acc)}
+.card .t{font-weight:bold;font-size:1rem}
+.card .d{color:var(--mut);font-size:.86rem;line-height:1.45;margin-top:.3rem}
+.card .m{font-size:.76rem;color:var(--mut);margin-top:.45rem}
+.chip{display:inline-block;border-radius:999px;padding:.08rem .5rem;font-size:.72rem;font-weight:bold;margin-right:.3rem;color:#000}
+.c-CRITICAL{background:var(--crit);color:#fff}.c-HIGH{background:var(--high)}.c-MEDIUM{background:var(--med)}.c-LOW{background:var(--low);color:#fff}.c-NONE{background:#5b6b82;color:#fff}
+.kev{background:#3d0f12;border:1px solid var(--crit);color:#ffb3b8;border-radius:6px;padding:.05rem .45rem;font-size:.72rem;font-weight:bold}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.bar-row{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:.35rem 0;color:var(--mut)}
+.bar-row b{color:var(--txt)}
+section.plain{margin-top:2.4rem;border-top:1px solid var(--line);padding-top:1rem}
+section.plain p,section.plain li{color:var(--mut);line-height:1.55}
+.disc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:.8rem 1rem;color:var(--mut);font-size:.92rem;line-height:1.5;margin-top:1.5rem}
+footer{border-top:2px solid var(--acc);margin-top:2.5rem;padding:1.2rem 1rem 2rem;text-align:center;color:var(--mut)}
+footer .desks a{margin:0 .45rem}
+</style>
+</head>
+<body>
+<div class="bar">
+  <span class="brand">🛡️ The CVE Desk</span>
+  <span class="by">a desk by <a href="https://x.com/bishowppandey" target="_blank" rel="noopener">Bishow Pandey</a></span>
+  <span class="social">
+    <a class="follow" href="https://x.com/bishowppandey" target="_blank" rel="noopener">Follow on X</a>
+    <a class="follow li" href="https://www.linkedin.com/in/bishowpandey" target="_blank" rel="noopener">Connect on LinkedIn</a>
+  </span>
+</div>
+<main>
+  <h1>Latest CVE Vulnerabilities — Mapped as a Living Graph</h1>
+  <p class="lede">Thousands of security flaws are published every month; nobody can read them all. This desk watches the sources of record — the NVD, CISA's known-exploited catalog, EPSS exploit forecasts and the GitHub Advisory Database — and draws the newest vulnerabilities as a node map: every CVE connected to the weakness behind it, the products it hits, and the ecosystems it travels in. Red means attackers are already using it.</p>
+  <div class="stats" id="stats"></div>
+
+  <section class="desk">
+    <h2>🕸️ The Vulnerability Graph</h2>
+    <p class="lede">The newest and nastiest CVEs as nodes, Neo4j-style. Bigger dot = higher CVSS. Hover to inspect, click a CVE to open its official record, drag nodes to rearrange the universe. CWE nodes are the weakness families; green nodes are products; yellow nodes are ecosystems.</p>
+    <div id="graphwrap">
+      <canvas id="graph"></canvas>
+      <div id="tip"></div>
+      <div class="legend">
+        <span><span class="dot" style="background:var(--crit)"></span>Critical CVE</span>
+        <span><span class="dot" style="background:var(--high)"></span>High</span>
+        <span><span class="dot" style="background:var(--med)"></span>Medium</span>
+        <span><span class="dot" style="background:#8e9dff"></span>CWE weakness</span>
+        <span><span class="dot" style="background:#3fb68b"></span>Product</span>
+        <span><span class="dot" style="background:var(--gold)"></span>Ecosystem</span>
+        <span>⬢ ring = CISA KEV (known exploited)</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="desk">
+    <h2>🔥 Actively Exploited — CISA KEV</h2>
+    <p class="lede">In the current window and already on CISA's Known Exploited Vulnerabilities list. Patch these first; attackers aren't waiting.</p>
+    <div class="grid" id="kev"><p class="lede">Loading the red board…</p></div>
+  </section>
+
+  <section class="desk">
+    <h2>🆕 The Latest Board</h2>
+    <div class="grid" id="latest"><p class="lede">Loading the latest CVEs…</p></div>
+  </section>
+
+  <section class="desk">
+    <h2>📊 Where the Storm Is</h2>
+    <div class="cols">
+      <div><h3>Top weakness families (CWE)</h3><div id="topcwe"></div></div>
+      <div><h3>Top ecosystems (via GitHub Advisories)</h3><div id="topeco"></div></div>
+    </div>
+  </section>
+
+  <section class="plain" id="all">
+    <h2>The full board, in brief</h2>
+    <p>Every tracked CVE with its headline facts, for search engines and skimmers — refreshed around the clock.</p>
+    <!--FEED:START-->
+<ul>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-119977">CVE-2026-119977</a> — WordPress Core is vulnerable to Remote Code Execution in versions 4.7 through 7.1.3. This is due to predictable, web-accessible staging paths used dur <span>(CVSS 8.1 (HIGH) · CISA KEV — known exploited)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-118235">CVE-2026-118235</a> — The SimpleForm – Form Maker to Chat Apps with Quiz, Poll and Multi Lead Notifications plugin for WordPress is vulnerable to Arbitrary File Upload in a <span>(CVSS 9.8 (CRITICAL) · EPSS 0.7%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-116512">CVE-2026-116512</a> — The Project Manager – AI Powered Project Management, Task Management, Kanban Board &amp; Time Tracker plugin for WordPress is vulnerable to Remote Code Ex <span>(CVSS 9.8 (CRITICAL) · EPSS 0.6%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-109220">CVE-2026-109220</a> — The PDF Invoice for WooCommerce + Drag and Drop Template Builder plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and <span>(CVSS 9.8 (CRITICAL) · EPSS 0.5%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-119096">CVE-2026-119096</a> — The Uncanny Toolkit for LearnDash plugin for WordPress is vulnerable to Authentication Bypass in versions up to, and including, 3.8.2 via the `email`  <span>(CVSS 9.8 (CRITICAL) · EPSS 0.5%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-103882">CVE-2026-103882</a> — The Acadlix LMS – AI Quiz Maker, Online Exam &amp; Course Plugin for WordPress plugin for WordPress is vulnerable to arbitrary file deletion due to insuff <span>(CVSS 9.1 (CRITICAL) · EPSS 0.8%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-116557">CVE-2026-116557</a> — The WP Booking System - Booking Calendar plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on  <span>(CVSS 9.1 (CRITICAL) · EPSS 0.3%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-89270">CVE-2026-89270</a> — The Popup Builder – Create highly converting, mobile friendly marketing popups. plugin for WordPress is vulnerable to authorization bypass in all vers <span>(CVSS 9.1 (CRITICAL))</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-116086">CVE-2026-116086</a> — A flaw was found in konflux-ci. An attacker with permission to trigger automated workflow runs can cause an information disclosure by providing crafte <span>(CVSS 8.8 (HIGH) · EPSS 0.3%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-104012">CVE-2026-104012</a> — The Rox Appointment Booking – Appointment Booking Scheduling Solution plugin for WordPress is vulnerable to Privilege Escalation via Mass Assignment i <span>(CVSS 8.8 (HIGH) · EPSS 0.3%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-120070">CVE-2026-120070</a> — The User Frontend – Membership, User Registration, User Profile, User Directory &amp; Content Restriction with Frontend Post Submission plugin for WordPre <span>(CVSS 8.8 (HIGH))</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-76010">CVE-2026-76010</a> — The Photo Gallery, Sliders, Proofing and Themes – NextGEN Gallery plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, a <span>(CVSS 8.8 (HIGH))</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-114217">CVE-2026-114217</a> — A flaw was found in konflux-ci. Continuous Integration (CI) automation scripts store sensitive GitHub access tokens in plaintext on the runner without <span>(CVSS 8.6 (HIGH) · EPSS 0.1%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-116964">CVE-2026-116964</a> — A flaw was found in konflux-ci. An attacker with repository write access can achieve arbitrary code execution within the Continuous Integration and Co <span>(CVSS 8.4 (HIGH) · EPSS 0.3%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-103898">CVE-2026-103898</a> — The Wp Social Login and Register Social Counter plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 3.2. <span>(CVSS 8.1 (HIGH) · EPSS 0.4%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-117681">CVE-2026-117681</a> — A flaw was found in konflux-ci. This vulnerability allows privilege escalation when the user interface proxy automatically disables Transport Layer Se <span>(CVSS 8.0 (HIGH) · EPSS 0.1%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-109197">CVE-2026-109197</a> — The WP Directory Kit plugin for WordPress is vulnerable to generic SQL Injection via the 'idfield' parameter in all versions up to, and including, 1.6 <span>(CVSS 7.5 (HIGH) · EPSS 0.4%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-118185">CVE-2026-118185</a> — The Security Optimizer WordPress plugin before 1.6.9 does not limit the number of two-factor authentication codes that can be submitted for a pending  <span>(CVSS 7.5 (HIGH) · EPSS 0.3%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-118638">CVE-2026-118638</a> — The Mapster WP Maps WordPress plugin before 2.0.6 does not perform any authorization check on a REST API route that writes post data, allowing unauthe <span>(CVSS 7.5 (HIGH) · EPSS 0.3%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-119163">CVE-2026-119163</a> — The FunnelKit Automations – Email Marketing Automation and CRM for WordPress &amp; WooCommerce plugin for WordPress is vulnerable to time-based SQL Inject <span>(CVSS 7.5 (HIGH))</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-120040">CVE-2026-120040</a> — The Mail logging &amp; Catcher plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.2.0 via the 'm <span>(CVSS 7.5 (HIGH))</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-120194">CVE-2026-120194</a> — A flaw was found in json-glib. The JSONPath slice evaluator used by json_path_query() can enter an infinite loop when given a slice expression with a  <span>(CVSS 7.5 (HIGH))</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-109997">CVE-2026-109997</a> — The Ninja Forms – Contact Form Builder with Calculators, Quizzes, Signatures &amp; AI Form Builder plugin for WordPress is vulnerable to Stored Cross-Site <span>(CVSS 7.2 (HIGH) · EPSS 0.4%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-109234">CVE-2026-109234</a> — The Meow Lightbox plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'post_content (bbPress reply body)' parameter in all versi <span>(CVSS 7.2 (HIGH) · EPSS 0.4%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-116520">CVE-2026-116520</a> — The PPWP – Password Protect Pages plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'comment / shortcode attribute desc_below_ <span>(CVSS 7.2 (HIGH) · EPSS 0.4%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-111254">CVE-2026-111254</a> — The W3 Total Cache plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'comment' parameter in all versions up to, and including, <span>(CVSS 7.2 (HIGH) · EPSS 0.3%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-107653">CVE-2026-107653</a> — The SureCart – Ecommerce Made Easy For Selling Physical Products, Digital Downloads, Subscriptions, Donations, &amp; Payments plugin for WordPress is vuln <span>(CVSS 7.2 (HIGH) · EPSS 0.3%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-107759">CVE-2026-107759</a> — The WPO365 | MICROSOFT 365 GRAPH MAILER plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'Subject (via wp_mail/PHPMailer, e.g <span>(CVSS 7.2 (HIGH) · EPSS 0.3%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-107750">CVE-2026-107750</a> — The PDF Invoices &amp; Packing Slips for WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'billing_address.first_name <span>(CVSS 7.2 (HIGH) · EPSS 0.3%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-116522">CVE-2026-116522</a> — The Relevanssi – A Better Search plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'comment' parameter in all versions up to,  <span>(CVSS 7.2 (HIGH) · EPSS 0.2%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-115840">CVE-2026-115840</a> — The VikRentCar Car Rental Management System plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'poplink' parameter in all versi <span>(CVSS 7.2 (HIGH) · EPSS 0.2%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-116548">CVE-2026-116548</a> — The VikRentCar Car Rental Management System plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'optionals' parameter in all ver <span>(CVSS 7.2 (HIGH) · EPSS 0.2%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-118070">CVE-2026-118070</a> — The Welcart e-Commerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'gid' parameter in all versions up to, and including, <span>(CVSS 7.2 (HIGH) · EPSS 0.2%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-119065">CVE-2026-119065</a> — The Shipping Zones by Drawing for WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'szbd-picked' checkout paramet <span>(CVSS 7.2 (HIGH) · EPSS 0.2%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-119162">CVE-2026-119162</a> — The User Submitted Posts – Enable Users to Submit Posts from the Front End plugin for WordPress is vulnerable to Stored DOM-Based Cross-Site Scripting <span>(CVSS 7.2 (HIGH) · EPSS 0.2%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-118057">CVE-2026-118057</a> — The Shield Security – Smart Bot Blocking, Brute-Force Login Protection &amp; File Scanning plugin for WordPress is vulnerable to Stored Cross-Site Scripti <span>(CVSS 7.2 (HIGH) · EPSS 0.2%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-110530">CVE-2026-110530</a> — The FeedWordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to, and including, 2026.0517 via syndicated RSS/Ato <span>(CVSS 7.2 (HIGH) · EPSS 0.2%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-118043">CVE-2026-118043</a> — The Bulk Media Register WordPress plugin before 2.01 does not properly validate a user-supplied path before moving a file on the server, allowing user <span>(CVSS 7.2 (HIGH) · EPSS 0.2%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-119089">CVE-2026-119089</a> — The ThirstyAffiliates – Affiliate Links, Link Branding, Link Tracking &amp; Marketing Plugin plugin for WordPress is vulnerable to Stored Cross-Site Scrip <span>(CVSS 7.2 (HIGH) · EPSS 0.2%)</span></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-120075">CVE-2026-120075</a> — The WP Activity Log plugin for WordPress is vulnerable to Stored Cross-Site Scripting in all versions up to, and including, 5.6.1 due to insufficient  <span>(CVSS 7.2 (HIGH))</span></li>
+</ul>
+<!--FEED:END-->
+  </section>
+
+  <section class="plain">
+    <h2>About The CVE Desk</h2>
+    <p>The CVE Desk is the application-security desk in Bishow Pandey's network — fitting, since application security is his day job. A scanner reads the NVD's recent publications, cross-checks them against CISA's known-exploited catalog, asks FIRST's EPSS model how likely each flaw is to be exploited, and pulls ecosystem and package data from the GitHub Advisory Database. It then draws the result as a graph, because a vulnerability is never just a row in a table: it is a weakness, in a product, in an ecosystem, with a blast radius.</p>
+    <p>How to use it: start with the red board (KEV), then sort your patch queue by CVSS × EPSS, and glance at the graph to see which weakness families keep coming back — that recurring CWE is tomorrow's headline.</p>
+  </section>
+
+  <div class="disc"><strong>Good to know:</strong> vulnerability data comes from the NVD (NIST), CISA, FIRST and GitHub, and is summarized for awareness. Scores change as analysis matures; a CVE marked "awaiting analysis" may gain its CVSS days later. Always confirm details and remediation in the official record and your vendor's advisory before acting. This desk is information, not a patch-management service.</div>
+</main>
+<footer>
+  <p style="font-size:1.05rem;color:var(--txt)"><strong>The CVE Desk</strong> — a desk by Bishow Pandey</p>
+  <p>New vulnerabilities land here around the clock. <a href="https://x.com/bishowppandey" target="_blank" rel="noopener"><strong>Follow @bishowppandey on X</strong></a> · <a href="https://www.linkedin.com/in/bishowpandey" target="_blank" rel="noopener"><strong>Connect on LinkedIn</strong></a></p>
+  <p class="desks">The desk network:
+    <a href="https://bishowpratap7.github.io/thedevdesk/">The Dev Desk</a> ·
+    <a href="https://bishowpratap7.github.io/scrollpatrol/">Scroll Patrol</a> ·
+    <a href="https://bishowpratap7.github.io/theworlddesk/">The World Desk</a> ·
+    <a href="https://bishowpratap7.github.io/thestockdesk/">The Stock Desk</a> ·
+    <a href="https://bishowpratap7.github.io/theshoppingdesk/">The Shopping Desk</a> ·
+    <a href="https://bishowpratap7.github.io/thecozydesk/">The Cozy Desk</a> ·
+    <a href="https://bishowpratap7.github.io/thefoodiedesk/">The Foodie Desk</a> ·
+    <a href="https://bishowpratap7.github.io/thestyledesk/">The Style Desk</a> ·
+    <a href="https://bishowpratap7.github.io/museumofoutages/">Museum of Outages</a> ·
+    <a href="https://bishowpratap7.github.io/thecvedesk/">The CVE Desk</a>
+  </p>
+  <p>Part of <a href="https://bishowpratap7.github.io/bishow-pandey-tech-blogs/">Bishow Pandey's</a> desk network · Data: NVD · CISA KEV · FIRST EPSS · GitHub Advisory Database</p>
+</footer>
+<script>
+const esc=s=>String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;');
+let DATA=null;
+async function boot(){
+  try{
+    const r=await fetch('data/feed.json?v='+Math.floor(Date.now()/1800000));
+    DATA=await r.json();
+    const s=DATA.stats||{};
+    document.getElementById('stats').innerHTML=
+      [["CVEs tracked",s.tracked],["Critical (CVSS ≥ 9)",s.critical],["In CISA KEV",s.kev],["Graph nodes",s.graph_nodes],["Graph edges",s.graph_edges]]
+      .map(x=>`<div class="stat"><b>${x[1]??'—'}</b><span>${x[0]}</span></div>`).join('');
+    const card=c=>`<a class="card" href="${esc(c.url)}" target="_blank" rel="noopener"><div class="t">${esc(c.id)} ${c.kev?'<span class="kev">KEV</span>':''}</div><div class="d">${esc(c.desc||'')}</div><div class="m">${c.cvss!=null?`<span class="chip c-${esc(c.severity)}">${c.cvss} ${esc(c.severity)}</span>`:''}${c.epss!=null?`EPSS ${(c.epss*100).toFixed(1)}% · `:''}${(c.cwes||[]).map(esc).join(', ')}${c.published?' · '+esc(c.published):''}</div></a>`;
+    document.getElementById('kev').innerHTML=(DATA.kev_spotlight&&DATA.kev_spotlight.length)?DATA.kev_spotlight.map(card).join(''):'<p class="lede">No KEV-listed CVEs in the current window. A quiet week — enjoy it.</p>';
+    document.getElementById('latest').innerHTML=(DATA.cves||[]).slice(0,36).map(card).join('');
+    const rows=a=>(a||[]).map(x=>`<div class="bar-row"><span>${esc(x[0])}</span><b>${x[1]}</b></div>`).join('')||'<p class="lede">—</p>';
+    document.getElementById('topcwe').innerHTML=rows(s.top_cwe);
+    document.getElementById('topeco').innerHTML=rows(s.top_ecosystems);
+    initGraph(DATA.graph);
+  }catch(e){
+    document.getElementById('latest').innerHTML='<p class="lede">The board is refreshing — please check back in a few minutes.</p>';
+  }
+}
+function initGraph(G){
+  if(!G||!G.nodes||!G.nodes.length)return;
+  const cv=document.getElementById('graph'),ctx=cv.getContext('2d'),tip=document.getElementById('tip');
+  const W=()=>cv.clientWidth,H=()=>cv.clientHeight;
+  const dpr=window.devicePixelRatio||1;
+  function size(){cv.width=W()*dpr;cv.height=H()*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);}
+  size();window.addEventListener('resize',size);
+  const sevColor=s=>({CRITICAL:'#e5484d',HIGH:'#f76b15',MEDIUM:'#ffb224',LOW:'#46a758'}[s]||'#5b6b82');
+  const nodes=G.nodes.map((n,i)=>({...n,x:W()/2+Math.cos(i)*180+ (Math.random()*60-30),y:H()/2+Math.sin(i)*140+(Math.random()*60-30),vx:0,vy:0,
+    r:n.type==='cve'?(5+((n.cvss||3)*1.1)):n.type==='cwe'?13:n.type==='product'?9:11,
+    color:n.type==='cve'?sevColor(n.severity):n.type==='cwe'?'#8e9dff':n.type==='product'?'#3fb68b':'#e8c766'}));
+  const byId={};nodes.forEach(n=>byId[n.id]=n);
+  const edges=G.edges.filter(e=>byId[e.s]&&byId[e.t]).map(e=>({a:byId[e.s],b:byId[e.t],kind:e.kind}));
+  let hover=null,drag=null,mx=0,my=0;
+  function step(){
+    for(const n of nodes){n.vx+=(W()/2-n.x)*0.0022;n.vy+=(H()/2-n.y)*0.0022;}
+    for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){
+      const a=nodes[i],b=nodes[j];let dx=a.x-b.x,dy=a.y-b.y;let d2=dx*dx+dy*dy+0.01;let d=Math.sqrt(d2);
+      let f=Math.min(2600/d2,3);dx/=d;dy/=d;a.vx+=dx*f;a.vy+=dy*f;b.vx-=dx*f;b.vy-=dy*f;}
+    for(const e of edges){const a=e.a,b=e.b;let dx=b.x-a.x,dy=b.y-a.y;let d=Math.max(Math.hypot(dx,dy),1);
+      let f=(d-95)*0.012;dx/=d;dy/=d;a.vx+=dx*f;a.vy+=dy*f;b.vx-=dx*f;b.vy-=dy*f;}
+    for(const n of nodes){if(n!==drag){n.x+=n.vx;n.y+=n.vy;}n.vx*=0.86;n.vy*=0.86;
+      n.x=Math.max(n.r+2,Math.min(W()-n.r-2,n.x));n.y=Math.max(n.r+2,Math.min(H()-n.r-2,n.y));}
+  }
+  function draw(){
+    ctx.clearRect(0,0,W(),H());
+    for(const e of edges){ctx.beginPath();ctx.moveTo(e.a.x,e.a.y);ctx.lineTo(e.b.x,e.b.y);
+      ctx.strokeStyle=e.kind==='weakness'?'#8e9dff33':e.kind==='affects'?'#3fb68b30':'#e8c7662b';ctx.lineWidth=1;ctx.stroke();}
+    for(const n of nodes){
+      if(n.kev){ctx.beginPath();ctx.arc(n.x,n.y,n.r+3.5,0,7);ctx.strokeStyle='#e5484d';ctx.lineWidth=2;ctx.stroke();}
+      ctx.beginPath();ctx.arc(n.x,n.y,n.r,0,7);ctx.fillStyle=n.color;ctx.fill();
+      if(n===hover){ctx.strokeStyle='#fff';ctx.lineWidth=1.6;ctx.stroke();}
+      if(n.type!=='cve'||n===hover){ctx.fillStyle='#dbe6f5';ctx.font=(n.type==='cve'?'bold 10px':'10px')+' Arial';
+        ctx.textAlign='center';ctx.fillText(n.label,n.x,n.y+n.r+12);}
+    }
+  }
+  function loop(){step();draw();requestAnimationFrame(loop);}
+  loop();
+  function pos(ev){const r=cv.getBoundingClientRect();return{x:ev.clientX-r.left,y:ev.clientY-r.top};}
+  cv.addEventListener('mousemove',ev=>{const p=pos(ev);mx=p.x;my=p.y;
+    hover=null;for(const n of nodes){if(Math.hypot(n.x-p.x,n.y-p.y)<n.r+4){hover=n;break;}}
+    if(drag){drag.x=p.x;drag.y=p.y;drag.vx=0;drag.vy=0;}
+    if(hover){tip.style.display='block';tip.style.left=(p.x+14)+'px';tip.style.top=(p.y+10)+'px';
+      tip.innerHTML=hover.type==='cve'?`<b>${esc(hover.label)}</b><br>CVSS: ${hover.cvss??'pending'} (${esc(hover.severity)})${hover.kev?'<br><span style="color:#ffb3b8">CISA KEV — known exploited</span>':''}<br><span style="color:#93a4bd">Click to open the official record</span>`
+        :`<b>${esc(hover.label)}</b><br>${esc(hover.type)} · linked to ${hover.count||''} tracked CVEs`;
+      cv.style.cursor='pointer';}
+    else{tip.style.display='none';cv.style.cursor=drag?'grabbing':'grab';}});
+  cv.addEventListener('mousedown',()=>{if(hover)drag=hover;});
+  window.addEventListener('mouseup',()=>{drag=null;});
+  cv.addEventListener('click',()=>{if(hover&&hover.type==='cve'&&hover.url)window.open(hover.url,'_blank');});
+  cv.addEventListener('mouseleave',()=>{tip.style.display='none';hover=null;});
+}
+boot();
+</script>
+</body>
+</html>

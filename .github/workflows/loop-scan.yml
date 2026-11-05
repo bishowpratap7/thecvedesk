@@ -1,0 +1,75 @@
+name: The CVE Desk Loop Scan
+
+# Self-perpetuating loop inside GitHub Actions: scans, sleeps, rescans for
+# ~5.5 hours, then dispatches its own successor. Hourly backup schedule is
+# only an emergency starter. Concurrency keeps one loop running, with at
+# most one successor queued.
+on:
+  workflow_dispatch:
+    inputs:
+      iterations:
+        description: "Scans per loop job"
+        required: false
+        default: "11"
+      sleep_seconds:
+        description: "Sleep between scans (seconds)"
+        required: false
+        default: "1800"
+  schedule:
+    - cron: "28 * * * *"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: thecvedesk-loop
+  cancel-in-progress: false
+
+jobs:
+  loop:
+    name: Loop-scan and keep the desk fresh
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    env:
+      ITERATIONS: ${{ inputs.iterations || '11' }}
+      SLEEP_SECONDS: ${{ inputs.sleep_seconds || '1800' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Loop - scan, commit, sleep, repeat
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for i in $(seq 1 "$ITERATIONS"); do
+            echo "::group::Scan $i of $ITERATIONS - $(date -u +%H:%M:%SZ)"
+            python3 tools/scan.py || echo "scan.py reported an error; continuing the loop"
+            sleep 7
+            git add data/feed.json index.html feed.xml sitemap.xml
+            if git diff --cached --quiet; then
+              echo "No changes this round."
+            else
+              git commit -m "CVE Desk update $(date -u +%Y-%m-%dT%H:%MZ)"
+              pushed=0
+              for try in 1 2 3; do
+                if git push origin HEAD:main; then pushed=1; break; fi
+                git pull --rebase origin main || true
+              done
+              if [ "$pushed" = "1" ] && [ -f "2d1ebc8e37790a8789ce8f66fdf4a6d0.txt" ]; then
+                curl -s --max-time 20 "https://api.indexnow.org/indexnow?url=https%3A%2F%2Fbishowpratap7.github.io%2Fthecvedesk%2F&key=2d1ebc8e37790a8789ce8f66fdf4a6d0" >/dev/null || true
+              fi
+            fi
+            echo "::endgroup::"
+            if [ "$i" -lt "$ITERATIONS" ]; then sleep "$SLEEP_SECONDS"; fi
+          done
+      - name: Hand off to the next loop
+        if: success() || failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run loop-scan.yml --ref main
