@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"><channel><title>The CVE Desk</title><link>https://bishowpratap7.github.io/thecvedesk/</link><description>Latest CVE vulnerabilities with CVSS, EPSS, CISA KEV status and a live weakness graph.</description>
-<item><title>CVE-2019-16447 (HIGH)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2019-16447</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2019-16447</guid><pubDate>2026-11-09T15:28:31+00:00</pubDate></item>
-<item><title>CVE-2019-16472 (NONE)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2019-16472</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2019-16472</guid><pubDate>2026-11-09T15:28:31+00:00</pubDate></item>
-<item><title>CVE-2019-16473 (NONE)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2019-16473</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2019-16473</guid><pubDate>2026-11-09T15:28:31+00:00</pubDate></item>
-<item><title>CVE-2019-16474 (NONE)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2019-16474</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2019-16474</guid><pubDate>2026-11-09T15:28:31+00:00</pubDate></item>
-<item><title>CVE-2019-16475 (NONE)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2019-16475</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2019-16475</guid><pubDate>2026-11-09T15:28:31+00:00</pubDate></item>
-<item><title>CVE-2019-16476 (NONE)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2019-16476</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2019-16476</guid><pubDate>2026-11-09T15:28:31+00:00</pubDate></item>
-<item><title>CVE-2019-16477 (NONE)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2019-16477</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2019-16477</guid><pubDate>2026-11-09T15:28:31+00:00</pubDate></item>
-<item><title>CVE-2019-16478 (NONE)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2019-16478</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2019-16478</guid><pubDate>2026-11-09T15:28:31+00:00</pubDate></item>
-<item><title>CVE-2019-16479 (NONE)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2019-16479</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2019-16479</guid><pubDate>2026-11-09T15:28:31+00:00</pubDate></item>
-<item><title>CVE-2019-16480 (NONE)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2019-16480</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2019-16480</guid><pubDate>2026-11-09T15:28:31+00:00</pubDate></item>
-<item><title>CVE-2019-16481 (NONE)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2019-16481</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2019-16481</guid><pubDate>2026-11-09T15:28:31+00:00</pubDate></item>
-<item><title>CVE-2019-16482 (NONE)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2019-16482</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2019-16482</guid><pubDate>2026-11-09T15:28:31+00:00</pubDate></item>
-<item><title>CVE-2019-16483 (NONE)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2019-16483</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2019-16483</guid><pubDate>2026-11-09T15:28:31+00:00</pubDate></item>
-<item><title>CVE-2019-16484 (NONE)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2019-16484</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2019-16484</guid><pubDate>2026-11-09T15:28:31+00:00</pubDate></item>
-<item><title>CVE-2019-16485 (NONE)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2019-16485</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2019-16485</guid><pubDate>2026-11-09T15:28:31+00:00</pubDate></item>
+<item><title>CVE-2026-123198 (CRITICAL)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2026-123198</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2026-123198</guid><pubDate>2026-11-09T16:29:12+00:00</pubDate></item>
+<item><title>CVE-2026-54143 (CRITICAL)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2026-54143</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2026-54143</guid><pubDate>2026-11-09T16:29:12+00:00</pubDate></item>
+<item><title>CVE-2026-100358 (CRITICAL)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2026-100358</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2026-100358</guid><pubDate>2026-11-09T16:29:12+00:00</pubDate></item>
+<item><title>CVE-2026-54141 (CRITICAL)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2026-54141</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2026-54141</guid><pubDate>2026-11-09T16:29:12+00:00</pubDate></item>
+<item><title>CVE-2026-121994 (HIGH)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2026-121994</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2026-121994</guid><pubDate>2026-11-09T16:29:12+00:00</pubDate></item>
+<item><title>CVE-2026-100365 (HIGH)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2026-100365</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2026-100365</guid><pubDate>2026-11-09T16:29:12+00:00</pubDate></item>
+<item><title>CVE-2026-123208 (HIGH)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2026-123208</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2026-123208</guid><pubDate>2026-11-09T16:29:12+00:00</pubDate></item>
+<item><title>CVE-2026-100363 (HIGH)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2026-100363</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2026-100363</guid><pubDate>2026-11-09T16:29:12+00:00</pubDate></item>
+<item><title>CVE-2026-54145 (HIGH)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2026-54145</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2026-54145</guid><pubDate>2026-11-09T16:29:12+00:00</pubDate></item>
+<item><title>CVE-2026-54146 (HIGH)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2026-54146</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2026-54146</guid><pubDate>2026-11-09T16:29:12+00:00</pubDate></item>
+<item><title>CVE-2026-82413 (HIGH)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2026-82413</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2026-82413</guid><pubDate>2026-11-09T16:29:12+00:00</pubDate></item>
+<item><title>CVE-2026-54912 (HIGH)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2026-54912</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2026-54912</guid><pubDate>2026-11-09T16:29:12+00:00</pubDate></item>
+<item><title>CVE-2026-77439 (HIGH)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2026-77439</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2026-77439</guid><pubDate>2026-11-09T16:29:12+00:00</pubDate></item>
+<item><title>CVE-2026-97175 (HIGH)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2026-97175</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2026-97175</guid><pubDate>2026-11-09T16:29:12+00:00</pubDate></item>
+<item><title>CVE-2026-54142 (HIGH)</title><link>https://nvd.nist.gov/vuln/detail/CVE-2026-54142</link><guid>https://nvd.nist.gov/vuln/detail/CVE-2026-54142</guid><pubDate>2026-11-09T16:29:12+00:00</pubDate></item>
 </channel></rss>
